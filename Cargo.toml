@@ -1,0 +1,11 @@
+[package]
+name = "loreum-distributor"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+vercel_lambda = "0.2.0"
+
+[[bin]]
+name = "status"
+path = "api/status.rs"
