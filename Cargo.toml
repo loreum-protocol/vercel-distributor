@@ -4,8 +4,14 @@ version = "0.1.0"
 edition = "2021"
 
 [dependencies]
+base16ct = { version = "0.1.1", features = ["alloc"] }
+sha2 = "0.10.2"
 vercel_lambda = "0.2.0"
 
 [[bin]]
 name = "status"
 path = "api/status.rs"
+
+[[bin]]
+name = "hash"
+path = "api/hash.rs"
